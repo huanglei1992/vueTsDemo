@@ -1,6 +1,4 @@
-# vueTsDemo vue+TypeScript 项目（配置）
-
-本项目是 vue+Typescript 项目配置的 demo
+![image.png](https://upload-images.jianshu.io/upload_images/15009210-f4a60551d5dc01ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 # 环境
 
@@ -629,7 +627,8 @@ public 目录中就会生成目录：
 可以看到上一次生成的文件还存在。为了不产生冗余，我们需要在生成文件之前删除上一次打包的 dll 文件，使用[clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin)
 
 > clean-webpack-plugin：用于删除构建目录和文件
-> 安装
+
+安装
 
 ```
 npm i clean-webpack-plugin -D
@@ -991,9 +990,9 @@ new Vue({
 打开 vscode，键盘 ctrl+shift+p，输入 setting，选择 Open User Settings；
 进入界面后选择`Extensions`下的`ESLint`，勾选三个选项：
 
-Auto Fix On Save
-Enable
-Lint Task: Enable
+- Auto Fix On Save
+- Enable
+- Lint Task: Enable
 
 找到`ESLint`中的 Validate 点击 Edit in settings.json，编辑如下：
 
@@ -1196,3 +1195,4 @@ Vue.component("Icon", Icon);
 ```
 
 具体操作内容可查看[vue 组件库如何按需引入之 babel-plugin-import](https://www.jianshu.com/p/ee8371b5d4e5)
+持续更新中。。。
