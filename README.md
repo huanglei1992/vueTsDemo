@@ -548,6 +548,7 @@ D:\project\ts_demo\dist
 生产环境中客户端向服务器请求资源的时候，请求头里 Accept-Encoding: gzip, deflate, br（三种编码方式）。如果服务端配置好了的话，在响应头中会有 Content-Encoding: gzip 这里就说明服务端返回的文件编码方式为 gzip。
 
 2、 依赖大文件打包配置
+
 打包完之后，可以看到`chunk-vendors.js`很大，是因为里面包含了所有的依赖包，运行`npm run build`时把所有的依赖包打包的过程会拖慢打包速度，大文件也会影响性能，我们可以把一些开发过程中一般不会变更的依赖包预先打包起来，比如`vue`,`vue-router`等，这样在编译时就可以不用再把这些不变的包再打包一次。
 提前打包的过程，使用到了[webpack 的 DllPlugin 和 DllReferencePlugin](https://www.webpackjs.com/plugins/dll-plugin/)。
 
@@ -555,10 +556,11 @@ D:\project\ts_demo\dist
 
 > DllReferencePlugin：这个插件是在 webpack 主配置文件中设置的， 这个插件把只有 dll 的 bundle(们)(dll-only-bundle(s)) 引用到需要的预编译的依赖。
 
-这里的操作有几步：
-1、新增一个 webpack 配置 dll.config.js，用 dllPlugin 定义要打包的 dll 文件
-2、运行 dll.config.js 生成 vendor.dll.js 及相应的 manifest 文件 vendor-manifest.json，并在项目模板 index.html 中引入 vendor.dll.js
-3、在项目的 webpack 配置中，通过 dllReferencePlugin 及 vendor-manifest.json 告诉 webpack 哪些包已经提前构建好了，不再需要重复构建
+这里的操作有几步
+
+1. 新增一个 webpack 配置 dll.config.js，用 dllPlugin 定义要打包的 dll 文件
+2. 运行 dll.config.js 生成 vendor.dll.js 及相应的 manifest 文件 vendor-manifest.json，并在项目模板 index.html 中引入 vendor.dll.js
+3. 在项目的 webpack 配置中，通过 dllReferencePlugin 及 vendor-manifest.json 告诉 webpack 哪些包已经提前构建好了，不再需要重复构建
 
 下面开始操作：
 根目录新增文件`dll.config.js`，用于配置 dll 文件的生成。
@@ -618,12 +620,18 @@ module.exports = {
 
 运行命令`npm run dll`
 public 目录中就会生成目录：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/15009210-143b63ec47f6e846.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 此时，如果我们的依赖包有变，比如修改生成的目录文件如下：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/15009210-7227bcbb37783c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 再次运行`npm run dll`
 目录如下：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/15009210-f469fa4f7c323090.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 可以看到上一次生成的文件还存在。为了不产生冗余，我们需要在生成文件之前删除上一次打包的 dll 文件，使用[clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin)
 
 > clean-webpack-plugin：用于删除构建目录和文件
@@ -1068,7 +1076,9 @@ import "@/registerGlobalComponents";
 ```
 
 在 components 下新增组件目录如下如下：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/15009210-3215fb458e94e176.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 编辑组件：
 
 ```
@@ -1134,6 +1144,7 @@ export default class App extends Vue {}
 ```
 
 可以看到在浏览器上正常使用：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/15009210-f9ec64b9157b3e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 # 引入第三方组件库
@@ -1195,4 +1206,5 @@ Vue.component("Icon", Icon);
 ```
 
 具体操作内容可查看[vue 组件库如何按需引入之 babel-plugin-import](https://www.jianshu.com/p/ee8371b5d4e5)
+
 持续更新中。。。
