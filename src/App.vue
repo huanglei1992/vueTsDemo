@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <Hello></Hello>
+    <BaseButton type="primary">我是按钮</BaseButton>
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>

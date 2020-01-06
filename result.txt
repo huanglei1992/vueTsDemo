@@ -1,0 +1,192 @@
+D:\project\ts_demo
+├─.browserslistrc
+├─.eslintrc.js
+├─.gitignore
+├─babel.config.js
+├─package-lock.json
+├─package.json
+├─README.md
+├─tsconfig.json
+├─tests
+|   ├─unit
+|   |  ├─.eslintrc.js
+|   |  └example.spec.ts
+├─src
+|  ├─App.vue
+|  ├─main.ts
+|  ├─registerServiceWorker.ts
+|  ├─shims-tsx.d.ts
+|  ├─shims-vue.d.ts
+|  ├─views
+|  |   ├─About.vue
+|  |   └Home.vue
+|  ├─store
+|  |   └index.ts
+|  ├─router
+|  |   └index.ts
+|  ├─components
+|  |     └HelloWorld.vue
+|  ├─assets
+|  |   └logo.png
+├─public
+|   ├─favicon.ico
+|   ├─index.html
+|   ├─robots.txt
+|   ├─img
+|   |  ├─icons
+|   |  |   ├─android-chrome-192x192.png
+|   |  |   ├─android-chrome-512x512.png
+|   |  |   ├─apple-touch-icon-120x120.png
+|   |  |   ├─apple-touch-icon-152x152.png
+|   |  |   ├─apple-touch-icon-180x180.png
+|   |  |   ├─apple-touch-icon-60x60.png
+|   |  |   ├─apple-touch-icon-76x76.png
+|   |  |   ├─apple-touch-icon.png
+|   |  |   ├─favicon-16x16.png
+|   |  |   ├─favicon-32x32.png
+|   |  |   ├─msapplication-icon-144x144.png
+|   |  |   ├─mstile-150x150.png
+|   |  |   └safari-pinned-tab.svg
+├─.git
+|  ├─COMMIT_EDITMSG
+|  ├─config
+|  ├─description
+|  ├─HEAD
+|  ├─index
+|  ├─refs
+|  |  ├─tags
+|  |  ├─heads
+|  |  |   └master
+|  ├─objects
+|  |    ├─pack
+|  |    ├─info
+|  |    ├─fb
+|  |    | └6015f46f54d17cb9b981303ad25a8e5bd5bcfe
+|  |    ├─f3
+|  |    | ├─c1537268e79933ae951aa4572c86601fa7fd98
+|  |    | └d2503fc2a44b5053b0837ebea6e87a2d339a43
+|  |    ├─f2
+|  |    | └4d454a2ecb8851bb893192b64ee09386d30e24
+|  |    ├─ee
+|  |    | ├─74e2360b5721f58c971ff5b5de2b52cb299fe7
+|  |    | └e1a0d78d7a44c66a303d6bf2fedd59dfb81744
+|  |    ├─eb
+|  |    | └0536286f3081c6c0646817037faf5446e3547d
+|  |    ├─e7
+|  |    | └e72905ca56eb8be58c6e8d2570e04a12d2dbee
+|  |    ├─df
+|  |    | └36fcfb72584e00488330b560ebcf34a41c64c2
+|  |    ├─da
+|  |    | └a3874d08d313cb719f5ecb468f79a350bb6236
+|  |    ├─d6
+|  |    | └471a38cc6e6e02345c1edce109312520a77d0d
+|  |    ├─d1
+|  |    | └11acc8bafa75a40d3ff646336c246a441331ff
+|  |    ├─cf
+|  |    | └10a5602e653bb126332934e2b7f34081c19a01
+|  |    ├─ce
+|  |    | └8896422cb0875e531d14201205d526734362b1
+|  |    ├─c5
+|  |    | └00769e3df9d6a6f1977ace8be4e63a8095e36a
+|  |    ├─bf
+|  |    | ├─3479fb680aa543e321c0f670d2ed721ceb4c14
+|  |    | └ecf9fc70661d41465fe97802bad5f1c6eb412a
+|  |    ├─b9
+|  |    | └3bd7c6fc725277de61b16e4a0a55137d9186ee
+|  |    ├─b3
+|  |    | └2d07e01e7ebdbdc89336fc9c4a7f0840a73ba8
+|  |    ├─b0
+|  |    | └2aa64d97167ad649e496908b35f14c603d9249
+|  |    ├─a0
+|  |    | ├─dddc6fb8c6b3feeeffa6e29bedca338e483382
+|  |    | └f516c051ddeecbe499cabdb57451ef8e53f154
+|  |    ├─9a
+|  |    | └5e190d0fd51816397a3b377f7509a8bc81de62
+|  |    ├─94
+|  |    | └66dcc769bed98c9fd9c1d761638576262251ba
+|  |    ├─8b
+|  |    | └cd5ce8c13362e6e5ec9e30e9a007d2edcf6e77
+|  |    ├─78
+|  |    | └08237a18d4009501f950044f8388d13c5e1044
+|  |    ├─73
+|  |    | └2afd8eb0aa8d33d077e92bb148901b454b40a1
+|  |    ├─65
+|  |    | └10c6a45035b6573151ff6196e4bdea78deb75d
+|  |    ├─46
+|  |    | └ca04dee251a4fa85a2891a145fbe20cc619d96
+|  |    ├─42
+|  |    | └af00963d81b8e39a30435c60ac482d1f8756e0
+|  |    ├─40
+|  |    | └4e192a95ccccbede087203c42b1f25f6bc6e67
+|  |    ├─3f
+|  |    | └a28070de24f2055171ca2e20543881cb7fdf1c
+|  |    ├─3b
+|  |    | └37a43ae2fdef53050291d95da2e49f78cf398e
+|  |    ├─39
+|  |    | └7abca88c5a451f06a407b93469db551efaa6de
+|  |    ├─38
+|  |    | └35e3d6b1b1714ce7e50f83e8faa1500321f9fa
+|  |    ├─30
+|  |    | ├─112bbb9a63e790a77eb2aac4ff3455a229f80e
+|  |    | └b7895d2f63545730aff9384e91429de52f88a5
+|  |    ├─2b
+|  |    | ├─9f28c09307f3906975edf3266969bf60e7d565
+|  |    | └cdf9fbcb0ee8d3efe3c9c39a0e12f63c2ebc5e
+|  |    ├─29
+|  |    | └9739245168b77613cd0683007ef3127418300d
+|  |    ├─23
+|  |    | └4c39d0b90a8bd31b9cfd76e5133a12aeb52e39
+|  |    ├─15
+|  |    | └cc8c42fedbd7028af025f387dbf1d3a3186983
+|  |    ├─14
+|  |    | └27cf62752646ad7217df0a61aa01fdef7475d1
+|  |    ├─0e
+|  |    | └8dbbf2f7181119221e5ed82c09100e155a5dd8
+|  |    ├─09
+|  |    | └56237c33926f28aafd7128bfc91535d71089bb
+|  |    ├─06
+|  |    | ├─088b011eccebb820b6e8de0cd244aa443208ba
+|  |    | └60bd67a54ed51e3f21893f4098cf97b7f7d40b
+|  |    ├─05
+|  |    | └494f6544c8f0ba8e4eb40164cabac17075ef55
+|  |    ├─03
+|  |    | ├─83e91b6ff200309203a7c95b5581010dd7f91c
+|  |    | └c0c5d5ec302ed7b0ee2c401df9427fb9d3c117
+|  ├─logs
+|  |  ├─HEAD
+|  |  ├─refs
+|  |  |  ├─heads
+|  |  |  |   └master
+|  ├─info
+|  |  └exclude
+|  ├─hooks
+|  |   ├─applypatch-msg
+|  |   ├─applypatch-msg.sample
+|  |   ├─commit-msg
+|  |   ├─commit-msg.sample
+|  |   ├─fsmonitor-watchman.sample
+|  |   ├─post-applypatch
+|  |   ├─post-checkout
+|  |   ├─post-commit
+|  |   ├─post-merge
+|  |   ├─post-receive
+|  |   ├─post-rewrite
+|  |   ├─post-update
+|  |   ├─post-update.sample
+|  |   ├─pre-applypatch
+|  |   ├─pre-applypatch.sample
+|  |   ├─pre-auto-gc
+|  |   ├─pre-commit
+|  |   ├─pre-commit.sample
+|  |   ├─pre-push
+|  |   ├─pre-push.sample
+|  |   ├─pre-rebase
+|  |   ├─pre-rebase.sample
+|  |   ├─pre-receive
+|  |   ├─pre-receive.sample
+|  |   ├─prepare-commit-msg
+|  |   ├─prepare-commit-msg.sample
+|  |   ├─push-to-checkout
+|  |   ├─sendemail-validate
+|  |   ├─update
+|  |   └update.sample
