@@ -902,7 +902,7 @@ axios.interceptors.response.use(
           response.headers.sessionstatus === "TIMEOUT")
       ) {
         // 如果接口返回timeout,表示当前账号实际退出了，不管当前用户显示不显示，都刷新为未登录状态
-        window.location.href = "https:///ux.21cn.com";
+        window.location.href = "https://xxx/login";
       } else if (
         (response.headers.USER && response.headers.USER !== account) ||
         (response.headers.User && response.headers.User !== account) ||
